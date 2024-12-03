@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailwindCSS</title>
+    <link href="./output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/839aa981e5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-[url('img/bg.jpg')] bg-cover bg-center h-screen">
+    <header>
+      <nav class="flex justify-between text-white">
+        <!-- _______tailwind logo _______-->
+        <img
+          src="img/tailwindlogo.svg"
+          alt="Tailwinds logo"
+          class="w-auto h-5 m-8"
+        />
+
+        <!-- ______navigation menu text_______ -->
+        <div class="hidden sm:flex gap-7 m-8 text-sm">
+          <a href="" class="hover:text-sky-500">Docs</a>
+          <a href="" class="hover:text-sky-500">Components</a>
+          <a href="" class="hover:text-sky-500">Blog</a>
+          <a href="" class="hover:text-sky-500">Showcase</a>
+
+          <!-- ______navigation menu icons_______ -->
+          <div class="flex gap-x-5 border-l pl-4 border-slate-700">
+            <i class="fa-solid fa-sun text-lg border-slate-700"></i>
+            <i class="fa-brands fa-github text-lg"></i>
+          </div>
+        </div>
+
+        <!-- ______navigation menu icons - (in MV)_______ -->
+        <div class="sm:hidden flex items-center gap-7 mx-7">
+          <!-- _______magnifying glass icon (for MV) _______-->
+          <button class="text-2xl text-slate-500">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <!-- _______3 dot icon (for MV) _______-->
+          <button class="text-2xl text-slate-300">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- _________hero text heading_________  -->
+      <h1
+        class="text-4xl sm:text-6xl font-bold text-white mx-4 sm:mx-24 mt-12 mb-6 text-center lg:mt-24"
+      >
+        Rapidly build modern websites <br />
+        without ever leaving your HTML.
+      </h1>
+      <!-- _________hero text sub-heading_________  -->
+      <h2
+        class="font-sans text-slate-400 text-center text-lg sm:text-xl mx-4 sm:mx-96"
+      >
+        A utility-first CSS framework packed with classes like
+        <span class="text-sky-500 font-mono">flex</span>,
+        <span class="text-sky-500 font-mono">pt-4</span> ,
+        <span class="text-sky-500 font-mono">text-center </span> and
+        <span class="text-sky-500 font-mono">rotate-90</span> that can be
+        composed to build any design, directly in your markup.
+      </h2>
+
+      <!-- _______ CTA section_______-->
+      <section class="flex justify-center gap-7 m-10">
+        <!-- _______ CTA button_______-->
+        <button
+          class="bg-sky-500 hover:bg-sky-400 rounded-lg px-6 h-12 font-semibold text-white text-sm sm:w-auto w-full"
+        >
+          Get started
+        </button>
+        <!-- _______ search bar _______-->
+        <button
+          class="flex items-center bg-slate-800 rounded-lg text-slate-300 hover:bg-slate-700 px-4 h-12 text-sm text-left w-72 ml-3 border-current sm:block hidden"
+        >
+          <i
+            class="text-lg text-slate-400 mr-5 fa-solid fa-magnifying-glass"
+            aria-hidden="true"
+          ></i>
+          <span class=""> Quick search... </span>
+
+          <abbr title="Control" class="no-underline text-slate-500 ml-auto"
+            >⌘ K
+          </abbr>
+        </button>
+      </section>
+    </header>
+  </body>
+</html>
