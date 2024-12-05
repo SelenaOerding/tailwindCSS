@@ -76,17 +76,13 @@
         </button>
         <!-- _______ search bar _______-->
         <button
-          class="flex items-center bg-slate-800 rounded-lg text-slate-300 hover:bg-slate-700 px-4 h-12 text-sm text-left w-72 ml-3 border-current sm:block hidden"
+          class="hidden sm:flex items-center w-72 text-left space-x-3 px-4 h-12 bg-slate-800 ring-1 ring-slate-900/10 focus:ring-2 shadow-sm rounded-lg text-slate-400"
         >
-          <i
-            class="text-lg text-slate-400 mr-5 fa-solid fa-magnifying-glass"
-            aria-hidden="true"
-          ></i>
-          <span class=""> Quick search... </span>
-
-          <abbr title="Control" class="no-underline text-slate-500 ml-auto"
-            >⌘ K
-          </abbr>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="flex-auto">Quick search...</span>
+          <kbd class="font-sans font-semibold">
+            <abbr title="Command" class="no-underline text-gray-700">⌘</abbr>K
+          </kbd>
         </button>
       </section>
     </header>
